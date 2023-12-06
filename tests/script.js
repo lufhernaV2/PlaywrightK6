@@ -1,5 +1,5 @@
 import { browser } from 'k6/experimental/browser';
-import { Homepage } from './page-objects/homepage.js';
+import { Homepage } from '../page-objects/homepage.js';
 
 
 export const options = {
