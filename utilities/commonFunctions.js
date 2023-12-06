@@ -1,6 +1,10 @@
-class commonFunctions {
+export class commonFunctions {
     constructor(page) {
         this.page = page;
+    }
+
+    async closeBrowserPage() {
+        this.page.close();
     }
 
     async loginToShop() {

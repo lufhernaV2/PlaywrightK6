@@ -11,6 +11,5 @@ export class Homepage {
         this.userNameField.type('standard_user');
         this.passwordField.type('secret_sauce');
         await this.submitButton.click();
-        this.page.close();
     }
 }
