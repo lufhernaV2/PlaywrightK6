@@ -21,8 +21,5 @@ export const options = {
 
 export default async function() {
   const page = browser.newPage();
-  const homePage = new Homepage(page);
-
-  await homePage.loginToHomePage()
  
 }
