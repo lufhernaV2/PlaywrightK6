@@ -1,5 +1,5 @@
 import { browser } from 'k6/experimental/browser';
-import { Homepage } from '../page-objects/homepage.js';
+import { LoginAndShop } from '../page-objects/loginAndShop.js';
 
 
 export const options = {
@@ -21,5 +21,6 @@ export const options = {
 
 export default async function() {
   const page = browser.newPage();
- 
+  const loginAndShop = new LoginAndShop(page);
+  await loginAndShop.loginAndShop();
 }
