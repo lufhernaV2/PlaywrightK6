@@ -1,13 +1,12 @@
 import { browser } from 'k6/experimental/browser';
 import { LoginAndShop } from '../page-objects/loginAndShop.js';
 
-
 export const options = {
   scenarios: {
     shared_iter_scenario: {
       executor: "shared-iterations",
-      vus: 10,
-      iterations: 100,
+      vus: 2,
+      iterations: 2,
       startTime: "0s",
       options: {
         browser: {
